@@ -1,15 +1,19 @@
 package me.utlight;
 
 import me.utlight.servlet.MyServlet1;
+import org.slf4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
+
 @SpringBootApplication
 @ServletComponentScan
 public class SpringBootDemoApplication {
+
+    private static final Logger logger = org.slf4j.LoggerFactory.getLogger(SpringBootDemoApplication.class);
 
 	//many spring-boot default configuration can be changed this way, and another is the property file.
 	//@Bean
@@ -29,5 +33,9 @@ public class SpringBootDemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootDemoApplication.class, args);
+		logger.debug("debug:boot run....");
+		//info will out to the console.
+		logger.info("info:boot run...");
+		logger.trace("trace:boot run...");
 	}
 }
