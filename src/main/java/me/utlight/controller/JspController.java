@@ -1,4 +1,4 @@
-package me.utlight.demo1;
+package me.utlight.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
