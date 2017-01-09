@@ -32,6 +32,7 @@ dependencies {
 	compile('javax.servlet:jstl')
 	compile('mysql:mysql-connector-java')
 	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
