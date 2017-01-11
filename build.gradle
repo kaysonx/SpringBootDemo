@@ -30,6 +30,13 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.apache.tomcat.embed:tomcat-embed-jasper')
 	compile('javax.servlet:jstl')
+	compile('mysql:mysql-connector-java')
+	compile('org.springframework.boot:spring-boot-starter-jdbc')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	//attention the version is necessary! or can not find this dependency.
+	compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.2.0')
+	compile('com.zaxxer:HikariCP:2.5.1')
+	compile('com.github.pagehelper:pagehelper-spring-boot-starter:1.0.0')
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
